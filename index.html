@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kushal Pizza</title>
+    <link rel="icon" type="image/x-cone" href="logo.jpg">
+    <link rel="stylesheet" href="style.css">
+   
+        
+    
+      
+</head>
+
+
+<body>
+
+  
+      
+    <!-- Header -->
+    <header>
+        <h1>Order Now</h1>
+        
+    </header>
+
+    
+    <main>
+        <!-- Pizza Order Form -->
+        <form action="confirmation.html" method="get">
+
+            <!-- Personal Information -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required><br>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </fieldset>
+
+
+
+            <!-- Pizza Details -->
+            <fieldset>
+            
+                <legend>Pizza Details</legend>
+                <label for="numOfPizzas">Number of Pizzas</label>
+                <input type="number" id="numOfPizzas" name="numOfPizzas" min="1" required><br>
+
+                <label for="pizzaSize">Size</label>
+                <select id="pizzaSize" name="pizzaSize" required>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="large"> Extra-Large</option>
+                </select>
+
+                <!--Crust-->
+                <label>Crust Type</label>
+                <input type="radio" id="deepDish" name="crustType" value="deepDish" required>
+                <label for="deepDish">Deep Dish</label>
+                <input type="radio" id="thinCrust" name="crustType" value="thinCrust" required>
+                <label for="thinCrust">Thin Crust</label>
+                
+                <input type="radio" id="Cheese-Stuffed Crust" name="crustType" value="Cheese-Stuffed Crust" required>
+                <label for="Cheese-Stuffed Crust">Cheese-Stuffed Crust</label><br>
+                <label for="Others">Others</label>
+                <input type="name" id="other" name="name" >
+            </fieldset>
+
+
+
+
+            <!-- Toppings  -->
+            <fieldset>
+                <legend>Toppings</legend>
+                <label for="toppings">Select Toppings </label>
+                <select id="toppings" name="toppings" multiple>
+                    <option value="pepperoni">Pepperoni</option>
+                    <option value="mushrooms">Mushrooms</option>
+                    <option value="sausage">Sausage</option>
+                    <option value="BBQ Chicken">BBQ Chicken</option><br>
+                </select>
+
+                    <label for="Others Toppings">Others Toppings</label>
+                    <input type="name" id="Others Toppings" name="name" >
+                    
+                    
+                
+            </fieldset>
+
+
+
+
+            <!-- Delivery Options  -->
+            <fieldset>
+                <legend>Delivery Options</legend>
+                <input type="radio" id="takeOut" name="deliveryOption" value="takeOut" required>
+                <label for="takeOut">Take Out</label>
+                <input type="radio" id="delivery" name="deliveryOption" value="delivery" required>
+                <label for="delivery">Delivery</label>
+                <input type="radio" id="eatIn" name="deliveryOption" value="eatIn" required>
+                <label for="eatIn">Eat In</label>
+            </fieldset>
+
+
+
+
+
+
+            <!-- Submit and Reset Buttons -->
+            <div>
+                <input type="submit" value="Place Order">
+                <input type="reset" value="Reset Form">
+            </div>
+        </form>
+
+        
+       
+    </main>
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <p>Pizza Assignment| Kushal Dahal</p>
+    </footer>
+</body>
+
+</html>
